@@ -40,5 +40,10 @@ jobs:
           # apply provisioning profile
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
+          
+      - name: Restore NuGet packages
+        run: nuget restore
 
+      - name: Build iOS
+        run: MSBuild /t:Build /p:Configuration=Release /p:Platform=iPhone /p:BuildIpa=true GitAction/GitAction/GitAction.csproj
       
