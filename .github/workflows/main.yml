@@ -45,5 +45,5 @@ jobs:
         run: nuget restore TestGitAction/TestGitAction/TestGitAction.csproj
 
       - name: Build iOS
-        run: MSBuild /t:Build /p:Configuration=Debug /p:Platform=iPhoneSimulator /p:BuildIpa=true TestGitAction/TestGitAction/TestGitAction.csproj
+        run: MSBuild /t:Clean /t:Build /p:Configuration=Debug /p:Platform=iPhoneSimulator /p:BuildIpa=true TestGitAction/TestGitAction/TestGitAction.csproj
       
