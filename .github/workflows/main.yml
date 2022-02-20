@@ -33,7 +33,9 @@ jobs:
           security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
           security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
 
-        
+          # import certificate to keychain
+          security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
 
           # apply provisioning profile
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
@@ -43,5 +45,5 @@ jobs:
         run: nuget restore TestGitAction/TestGitAction/TestGitAction.csproj
 
       - name: Build iOS
-        run: MSBuild /t:Build /p:Configuration=Release /p:Platform=iPhone /p:BuildIpa=true TestGitAction/TestGitAction/TestGitAction.csproj
+        run: MSBuild /t:Build /p:Configuration=Debug /p:Platform=iPhone /p:BuildIpa=true TestGitAction/TestGitAction/TestGitAction.csproj
       
