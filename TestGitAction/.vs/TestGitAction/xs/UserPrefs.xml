@@ -1,13 +1,14 @@
 ﻿<Properties StartupConfiguration="{3249C36A-7FE4-427B-9FFD-798EC6641BC4}|Default">
   <MonoDevelop.Ide.ItemProperties.TestGitAction FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.49396228-5DCD-4E66-8115-6D317A4A159C" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestGitAction/Info.plist">
+    <Files>
+      <File FileName="TestGitAction/Info.plist" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestGitAction" expanded="True">
-            <Node name="TestGitAction" expanded="True">
-              <Node name="GettingStarted" selected="True" />
-            </Node>
+            <Node name="TestGitAction" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
