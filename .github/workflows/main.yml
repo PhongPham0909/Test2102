@@ -11,6 +11,14 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup iOS Certificates
+        uses: apple-actions/import-codesign-certs@v1
+        with: 
+          p12-file-base64: ${{ secrets.CERT_P12 }}
+          p12-password: ${{ secrets.P12_PASS }}
+          keychain: github-actions-xamarin
+          keychain-password: ''
+          
       - uses: bradyjoslin/xamarinios-signedbuild-action@v1
         with:
           csproj_path: TestGitAction/TestGitAction/TestGitAction.csproj
