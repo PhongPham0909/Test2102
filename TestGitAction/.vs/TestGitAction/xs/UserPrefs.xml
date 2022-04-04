@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{FC6267BD-14AE-4D1F-A519-21C68D7E2C65}|Default">
-  <MonoDevelop.Ide.ItemProperties.TestGitAction FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b59681d11a9be856e181f0ca8f6544b3b2e882e8" />
+  <MonoDevelop.Ide.ItemProperties.TestGitAction PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b59681d11a9be856e181f0ca8f6544b3b2e882e8" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestGitAction/Info.plist">
     <Files>
       <File FileName="TestGitAction/Info.plist" />
