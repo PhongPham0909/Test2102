@@ -1,5 +1,5 @@
-﻿<Properties StartupConfiguration="{3249C36A-7FE4-427B-9FFD-798EC6641BC4}|Default">
-  <MonoDevelop.Ide.ItemProperties.TestGitAction FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.49396228-5DCD-4E66-8115-6D317A4A159C" />
+﻿<Properties StartupConfiguration="{FC6267BD-14AE-4D1F-A519-21C68D7E2C65}|Default">
+  <MonoDevelop.Ide.ItemProperties.TestGitAction FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.b59681d11a9be856e181f0ca8f6544b3b2e882e8" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestGitAction/Info.plist">
     <Files>
       <File FileName="TestGitAction/Info.plist" />
@@ -15,7 +15,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
