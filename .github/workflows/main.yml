@@ -46,18 +46,11 @@ jobs:
 
       - name: Build iOS
         run: MSBuild /t:Clean /t:Build /p:Configuration=Release /p:Platform=iPhone /p:BuildIpa=true TestGitAction/TestGitAction/TestGitAction.csproj
-        
-        
-      - name: Upload artifact2
+                 
+      
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: TestGitAction.apk
-          path: TestGitAction/TestGitAction/bin/iPhone/Release/TestGitAction.iOS.ipa
-          
-      
-      - name: Upload artifact2
-        uses: actions/upload-artifact@v2
-        with:
-          name: TestGitAction2.apk
           path: TestGitAction/TestGitAction/bin/iPhone/Release/TestGitAction.ipa
       
