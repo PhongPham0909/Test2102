@@ -45,10 +45,10 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Distribution: Nghia Nguyen (JRDS6QAXTP)</CodesignKey>
+    <CodesignKey>Apple Distribution: PatientPop Inc. (A9W7FS4W24)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>GitAction</CodesignProvision>
     <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignProvision>adhoc_autotest</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -58,9 +58,9 @@
     <WarningLevel>4</WarningLevel>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Distribution: Nghia Nguyen (JRDS6QAXTP)</CodesignKey>
+    <CodesignKey>Apple Distribution: PatientPop Inc. (A9W7FS4W24)</CodesignKey>
     <MtouchLink>SdkOnly</MtouchLink>
-    <CodesignProvision>GitAction</CodesignProvision>
+    <CodesignProvision>adhoc_autotest</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
