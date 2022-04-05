@@ -53,5 +53,5 @@ jobs:
         
         
       - name: Upload iOS app to App Center        
-        run: appcenter distribute release --silent --file TestGitAction/TestGitAction/bin/iPhone/Release/TestGitAction.ipa --app PPThorTeam-outlook.com/Demo-GitAction-iOS --group Collaborators --token ${{ secrets.APPCENTER_TOKEN }}
+        run: appcenter distribute release --silent --file TestGitAction/TestGitAction/bin/iPhone/Release/TestGitAction.ipa --app PPThorTeam-outlook.com/GithubAction --group Collaborators --token ${{ secrets.APPCENTER_TOKEN }}
       
