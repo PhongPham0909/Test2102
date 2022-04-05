@@ -51,6 +51,7 @@ jobs:
       - name: Setup App Center CLI
         run: npm install -g appcenter-cli
         
+        
       - name: Upload iOS app to App Center        
         run: appcenter distribute release --silent --file TestGitAction/TestGitAction/bin/iPhone/Release/TestGitAction.ipa --app PPThorTeam-outlook.com/Demo-GitAction-iOS --group Collaborators --token ${{ secrets.APPCENTER_TOKEN }}
       
